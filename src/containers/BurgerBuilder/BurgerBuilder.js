@@ -46,7 +46,7 @@ class BurgerBuilder extends Component {
         this.updatePurchaseState(updatedIngredients);
     }
     removeIngredientHandler = (type) => {
-        const oldCount = this.ingredients[type];
+        const oldCount = this.state.ingredients[type];
         if(oldCount <= 0){
             return ;
         }
